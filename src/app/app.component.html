@@ -1,8 +1,13 @@
 
-<h1>{{  nombre | titlecase }}</h1>
-<h1> {{  valor | number  }} </h1>
-<h1> {{  obj | json  }} </h1>
+<div class="text-layout">
 
-<button (click)="imprimeValores()">
-    Ver valor
-</button>
+    <h1>{{  nombre | titlecase }}</h1>
+    <h1> {{  valor | number  }} </h1>
+    <h1> {{  obj | json  }} </h1>
+
+    <button 
+    pButton
+    (click)="imprimeValores()"
+    label="Ver Valor"
+    ></button>
+</div>
