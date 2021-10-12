@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 
 
 // Módulo personalizado
-import { PrimeNgModule } from './prime-ng/prime-ng.module';
+import { SharedModule } from './shared/shared.module';
 
 
 
@@ -16,7 +16,7 @@ import { PrimeNgModule } from './prime-ng/prime-ng.module';
   ],
   imports: [
     BrowserModule,
-    PrimeNgModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
