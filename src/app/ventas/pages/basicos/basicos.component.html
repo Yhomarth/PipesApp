@@ -12,7 +12,30 @@
 
 <div class="grid">
     <div class="col-4">
-        <p-card header="UpperCase"></p-card>
+        <p-card 
+            header="UpperCase"
+            [subheader] = "nombre | uppercase"
+            >        
+                {{ nombre | uppercase }}
+        </p-card>
+    </div>
+
+    <div class="col-4">
+        <p-card 
+            header="LowerCase"
+            [subheader] = "nombre | lowercase"
+            >        
+                {{ nombre | lowercase }}
+        </p-card>
+    </div>
+
+    <div class="col-4">
+        <p-card 
+            header="TitleCase"
+            [subheader] = "nombre | titlecase"
+            >        
+                {{ nombre | titlecase }}
+        </p-card>
     </div>
 
     <div class="col-4">
