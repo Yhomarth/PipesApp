@@ -10,5 +10,6 @@ export class BasicosComponent  {
 
 
   nombre: string = 'YhomartH ReyeS';
+  fecha: Date = new Date();
 
 }
