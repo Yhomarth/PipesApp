@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRouterModule } from './app-router.module';
 
@@ -9,6 +9,10 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { VentasModule } from './ventas/ventas.module';
 
+import localES from  '@angular/common/locales/es-DO';
+import { registerLocaleData } from '@angular/common'
+
+registerLocaleData(localES);
 
 
 
@@ -22,7 +26,12 @@ import { VentasModule } from './ventas/ventas.module';
     SharedModule,
     VentasModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide : LOCALE_ID,
+      useValue : 'es-DO'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
