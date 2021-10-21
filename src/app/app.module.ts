@@ -10,9 +10,11 @@ import { SharedModule } from './shared/shared.module';
 import { VentasModule } from './ventas/ventas.module';
 
 import localES from  '@angular/common/locales/es-DO';
+import localJP from '@angular/common/locales/ja'
 import { registerLocaleData } from '@angular/common'
 
 registerLocaleData(localES);
+registerLocaleData(localJP);
 
 
 
