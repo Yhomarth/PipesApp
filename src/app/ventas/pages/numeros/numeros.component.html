@@ -9,13 +9,34 @@
 </div>
 
 
-<div class="p-grid">
-    <div class="p-col-4">
+<div class="grid">
+
+    <div class="col-4">
         <p-card header="Ventas Netas"
             subheader="del presente año">
 
-            <b class="pi pi-dollar"></b>
+            <i class="pi pi-dollar"></i>
             {{ (ventasNetas + 1000000 )| number: '1.2-6' }}
         </p-card>
     </div>
+
+
+    <div class="col-4">
+        <p-card header="Ventas Brutas"
+            subheader="del presente año">
+
+            <i class="pi pi-dollar"></i>
+            {{ (ventasNetas + 2000000 )| currency:'DOP':'symbol-narrow':'1.4-4' }}
+        </p-card>
+    </div>
+
+    <div class="col-4">
+        <p-card header="Ganancia Porcentual"
+            subheader="del presente año">
+
+            <i class="pi pi-dollar"></i>
+            {{ (porcentaje) | percent : '1.2-2'  }}
+        </p-card>
+    </div>
+
 </div>
