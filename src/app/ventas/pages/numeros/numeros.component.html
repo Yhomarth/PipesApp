@@ -24,8 +24,6 @@
     <div class="col-4">
         <p-card header="Ventas Brutas"
             subheader="del presente año">
-
-            <i class="pi pi-dollar"></i>
             {{ (ventasNetas + 2000000 )| currency:'DOP':'symbol-narrow':'1.4-4' }}
         </p-card>
     </div>
@@ -33,8 +31,6 @@
     <div class="col-4">
         <p-card header="Ganancia Porcentual"
             subheader="del presente año">
-
-            <i class="pi pi-dollar"></i>
             {{ (porcentaje) | percent : '1.2-2'  }}
         </p-card>
     </div>
