@@ -17,12 +17,41 @@ export class NoComunesComponent  {
   }
 
   // i18nplural
-  clientes : string [] = ['Juan', 'Pedro', 'Maria'];
+  clientes : string [] = ['Juan', 'Pedro', 'Maria', 'José'];
 
   mapingObjClientes = {
    '=0': 'no tenemos ningún cliente esperando.',
    '=1' : 'un cliente esperando.',
    'other' : '# clientes esperando.' 
+  }
+
+  tituloBotonBorrar:string = 'Borrar un Cliente';
+
+
+  cambiarCliente(){
+
+    this.nombre = this.nombre === 'Rosa' ? 'Yhomarth' : 'Rosa';
+    this.genero = this.genero === 'femenino' ? 'masculino' : 'femenino';
+
+  }
+
+  borrarCliente(){
+
+    //console.log('boton borrar presionado');
+
+    this.clientes.pop();
+
+    // if(this.clientes.length >= 1 ){
+    //   this.clientes.pop();
+    // }
+    // else{
+    //   this.clientes = ['Juan', 'Pedro', 'Maria', 'José'];
+      
+    // }
+
+
+    //   this.tituloBotonBorrar = this.clientes.length > 0 ? 'Borrar un Cliente' : 'Restablecer clientes';
+
   }
 
 }
