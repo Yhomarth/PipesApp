@@ -16,6 +16,12 @@ export class NoComunesComponent  {
     'femenino'  : 'invitarla'
   }
 
+  persona = {
+    nombre : 'Yhomarth',
+    edad : 35,
+    direccion : 'Gazcue'
+  }
+
   // i18nplural
   clientes : string [] = ['Juan', 'Pedro', 'Maria', 'José'];
 
