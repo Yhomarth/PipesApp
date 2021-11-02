@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -78,5 +79,20 @@ export class NoComunesComponent  {
     //   this.tituloBotonBorrar = this.clientes.length > 0 ? 'Borrar un Cliente' : 'Restablecer clientes';
 
   }
+
+
+  // async Pipe
+
+  miObservable = interval(1000);
+
+  valorPromesa = new Promise( (resolve, reject)=>{
+
+    setTimeout( ()=> {
+
+      resolve('Tenemos data de promesa');
+    
+    }, 3000);
+
+  })
 
 }
