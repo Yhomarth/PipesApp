@@ -22,6 +22,25 @@ export class NoComunesComponent  {
     direccion : 'Gazcue'
   }
 
+  heroes = [
+    {
+      nombre : 'Superman',
+      vuela : true
+    },
+    {
+      nombre : 'Batman',
+      vuela : false
+    },
+    {
+      nombre : 'Ironman',
+      vuela : true
+    },
+    {
+      nombre : 'Robin',
+      vuela : false
+    }
+  ]
+
   // i18nplural
   clientes : string [] = ['Juan', 'Pedro', 'Maria', 'José'];
 
